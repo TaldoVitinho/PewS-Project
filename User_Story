@@ -8,6 +8,21 @@ Para que eu entender de forma visual quais áreas do paciente estão sendo mais 
         - Gráfico em formato de colunas;
         - Cores diferentes para cada coluna do gráfico, com uma legenda de cores representado o tipo de comorbidade.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Gerenciamento de medicamentos:
+Como farmacêutico,
+Quero gerenciar o estoque de medicamentos e ser notificado sobre níveis baixos,
+Para que eu possa garantir que não haja falta de remédios essenciais no hospital.
+
+     Critérios de Aceitação:
+         - O sistema deve permitir o cadastro e monitoramento de medicamentos no estoque;
+         - Deve ser possível configurar alertas para níveis baixos de estoque;
+         - O farmacêutico deve conseguir gerar relatórios de entrada e saída dos medicamentos;
+         - O sistema deve registrar as quantidades utilizadas por paciente e unidade hospitalar.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 5. Feedback e Suporte
 Como usuário,
 Eu quero enviar feedback ou solicitar suporte técnico dentro do sistema,
