@@ -1,12 +1,36 @@
-- 1. Integração com Outros Sistemas Hospitalares
+1. Integração com Outros Sistemas Hospitalares
 Como técnico de TI,
 Eu quero que o sistema PEWS integre os dados dos prontuários eletrônicos,
 Para que os dados vitais sejam importados automaticamente sem necessidade de inserção manual.
 
-- 2. Personalização do Perfil do Usuário
+2. Personalização do Perfil do Usuário
 Como usuário,
 Eu quero atualizar minhas informações pessoais, como foto, nome e preferências,
 Para que minha conta reflita meus dados atualizados.
   - Deve ser possível editar e salvar os dados pessoais.
   - A imagem do perfil deve suportar upload em formatos como PNG e JPEG.
   - O sistema deve notificar sobre mudanças salvas com sucesso.
+
+3. Pesquisa Avançada
+Como usuário,
+Eu quero buscar itens ou informações no sistema usando filtros específicos,
+Para que eu encontre o que procuro rapidamente.
+  - O sistema deve permitir buscas por palavras-chave e oferecer filtros como categoria, preço, data ou relevância.
+  - Os resultados devem ser exibidos em tempo real conforme os filtros são aplicados.
+  - Deve haver paginação ou rolagem infinita nos resultados.
+
+4. Gestão de Permissões
+Como administrador do sistema,
+Eu quero gerenciar os níveis de acesso e permissões dos usuários,
+Para que cada um tenha acesso apenas às funcionalidades necessárias.
+  - Deve ser possível criar, editar e excluir diferentes papéis de usuário.
+  - O administrador pode atribuir permissões específicas a cada papel.
+  - O sistema deve bloquear automaticamente o acesso não autorizado.
+
+5. Feedback e Suporte
+Como usuário,
+Eu quero enviar feedback ou solicitar suporte técnico dentro do sistema,
+Para que minhas dúvidas ou problemas sejam resolvidos rapidamente.
+  - Deve ser possível enviar mensagens com descrições detalhadas do problema.
+  - O sistema deve fornecer um número de protocolo para acompanhamento.
+  - O suporte deve notificar o usuário sobre o progresso da resolução.
