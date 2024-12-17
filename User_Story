@@ -34,3 +34,12 @@ Para que minhas dúvidas ou problemas sejam resolvidos rapidamente.
   - Deve ser possível enviar mensagens com descrições detalhadas do problema.
   - O sistema deve fornecer um número de protocolo para acompanhamento.
   - O suporte deve notificar o usuário sobre o progresso da resolução.
+
+6. Gestão de Medicamentos
+Como farmaceutico,
+Quero gerenciar o estoque de medicamentos e ser notificados sobre níveis baixos, 
+Para que eu possa garantir que não haja falta de remédios esssenciais no hospital.
+ - Sistema deve permitir o cadastro e monitoramento de medicamentos no estoque 
+ - Deve ser possivel configurar alertas para niveis baixos de estoque
+ - O farmacêutico deve conseguir gerar relatórios de entrada e saída dos medicamentos 
+ - O sistema deve registrar as quantidades utlizadas por paciente e unidade hospitalar
