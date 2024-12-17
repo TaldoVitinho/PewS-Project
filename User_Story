@@ -1,4 +1,12 @@
+1. Gráfico com o graú de comorbidade do paciente:
+Como médico,
+Eu quero que quando terminada a avaliação, eu receba o score final junto de um gráfico com o graú das comorbidades do paciente,
+Para que eu entender de forma visual quais áreas do paciente estão sendo mais ou menos afetadas.
 
+   Critérios de aceitação:
+        - Deve ser possível fazer o download do gráfico em formato PNG e JPEG;
+        - Gráfico em formato de colunas;
+        - Cores diferentes para cada coluna do gráfico, com uma legenda de cores representado o tipo de comorbidade.
 
 5. Feedback e Suporte
 Como usuário,
