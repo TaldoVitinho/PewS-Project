@@ -1,0 +1,12 @@
+- 1. Integração com Outros Sistemas Hospitalares
+Como técnico de TI,
+Eu quero que o sistema PEWS integre os dados dos prontuários eletrônicos,
+Para que os dados vitais sejam importados automaticamente sem necessidade de inserção manual.
+
+- 2. Personalização do Perfil do Usuário
+Como usuário,
+Eu quero atualizar minhas informações pessoais, como foto, nome e preferências,
+Para que minha conta reflita meus dados atualizados.
+  - Deve ser possível editar e salvar os dados pessoais.
+  - A imagem do perfil deve suportar upload em formatos como PNG e JPEG.
+  - O sistema deve notificar sobre mudanças salvas com sucesso.
