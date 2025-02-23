@@ -53,5 +53,7 @@ O **PEWS** é um sistema de alerta precoce para monitoramento de pacientes pedi�
 ## Como abrir a Página WEB
 
    1° Devemos instalar a pasta Projeto_PEWS.rar;
+   
    2° Descompactar o arquivo RAR Projeto_PEWS.rar gerando a pasta Projeto_PEWS;
+   
    3° Abrir a pasta Projeto_PEWS, e abrir o arquivo Index.html ou arrastar o arquivo Index.html até a página do navegador. O arquivo Index.html é a página incial da Página WEB.
