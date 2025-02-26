@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificações</title>
+    <link rel="stylesheet" href="notificacoes.css">
+</head>
+<body>
+    <!-- Barra de navegação no topo -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="inicial.html">Início</a></li>
+            <li><a href="suporte.html">Suporte</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h1>Notificações do Plantão</h1>
+
+        <!-- Quadro de notificações -->
+        <div class="quadro-notificacoes">
+            <h2>Principais Notificações</h2>
+            <ul>
+                <li>Paciente João Silva - Laudo atualizado.</li>
+                <li>Paciente Maria Oliveira - Exames pendentes.</li>
+                <li>Paciente Carlos Souza - Alta médica confirmada.</li>
+                <li>Paciente Ana Costa - Necessidade de intervenção urgente.</li>
+            </ul>
+        </div>
+
+        <!-- Botões de controle no canto inferior direito -->
+        <div class="botoes-controle">
+            <!-- Botão de volume -->
+            <div class="botao-container">
+                <button class="botao-volume">🔊</button>
+                <div class="opcao-volume">Mudo</div>
+            </div>
+
+            <!-- Botão de vibração -->
+            <div class="botao-container">
+                <button class="botao-vibracao">📳</button>
+                <div class="opcao-vibracao">Vibração</div>
+            </div>
+
+            <!-- Botão de toques de som -->
+            <div class="botao-container">
+                <button class="botao-toques">🎵</button>
+                <div class="opcao-toques">Toques</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script para interação dos botões -->
+    <script>
+        // Botão de volume
+        const botaoVolume = document.querySelector('.botao-volume');
+        const opcaoVolume = document.querySelector('.opcao-volume');
+
+        botaoVolume.addEventListener('click', () => {
+            opcaoVolume.style.display = opcaoVolume.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Botão de vibração
+        const botaoVibracao = document.querySelector('.botao-vibracao');
+        const opcaoVibracao = document.querySelector('.opcao-vibracao');
+
+        botaoVibracao.addEventListener('click', () => {
+            opcaoVibracao.style.display = opcaoVibracao.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Botão de toques de som
+        const botaoToques = document.querySelector('.botao-toques');
+        const opcaoToques = document.querySelector('.opcao-toques');
+
+        botaoToques.addEventListener('click', () => {
+            opcaoToques.style.display = opcaoToques.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
