@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Suporte</title>
+    <link rel="stylesheet" href="suporte.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tela de Suporte</h1>
+        
+        <section class="pews-section">
+            <h2>PewS</h2>
+            <ul>
+                <li><a href="inicial.html">Início</a></li> <!-- Link de volta para a página inicial -->
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="suporte-section">
+            <h2>Suporte</h2>
+            <form>
+                <label for="motivo">Motivo do Suporte</label>
+                <input type="text" id="motivo" name="motivo" required placeholder="Digite o motivo do suporte">
+
+                <label for="problema">Descreva o Problema</label>
+                <textarea id="problema" name="problema" rows="5" required placeholder="Descreva o problema detalhadamente"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
