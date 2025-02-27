@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Medicamentos</title>
+    <link rel="stylesheet" href="gestao_medicamentos.css">
+</head>
+<body>
+    <!-- Barra de navegação no topo -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="inicial.html">Início</a></li>
+            <li><a href="suporte.html">Suporte</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h1>Gestão de Medicamentos</h1>
+
+        <!-- Formulário para adicionar medicamentos -->
+        <div class="adicionar-medicamento">
+            <h2>Adicionar Medicamento</h2>
+            <form id="form-medicamento" action="adicionar_medicamento.php" method="POST">
+                <label for="nome">Nome do Medicamento:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite o nome do medicamento">
+            
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" required placeholder="Digite a quantidade">
+            
+                <label for="validade">Data de Validade:</label>
+                <input type="date" id="validade" name="validade" required>
+            
+                <button type="submit" class="button-access">Adicionar</button>
+            </form>
+        </div>
+
+        <!-- Lista de medicamentos -->
+        <div class="lista-medicamentos">
+            <h2>Lista de Medicamentos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                        <th>Validade</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-medicamentos">
+                    <!-- Os medicamentos serão adicionados aqui via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Script para adicionar medicamentos dinamicamente -->
+    <script>
+        document.getElementById('form-medicamento').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Captura os valores do formulário
+            const nome = document.getElementById('nome').value;
+            const quantidade = document.getElementById('quantidade').value;
+            const validade = document.getElementById('validade').value;
+
+            // Cria uma nova linha na tabela
+            const tabela = document.getElementById('tabela-medicamentos');
+            const novaLinha = document.createElement('tr');
+
+            novaLinha.innerHTML = `
+                <td>${nome}</td>
+                <td>${quantidade}</td>
+                <td>${validade}</td>
+                <td>
+                    <button class="editar">Editar</button>
+                    <button class="remover">Remover</button>
+                </td>
+            `;
+
+            // Adiciona a nova linha à tabela
+            tabela.appendChild(novaLinha);
+
+            // Limpa o formulário
+            document.getElementById('form-medicamento').reset();
+        });
+
+        // Função para remover medicamentos
+        document.addEventListener('click', function (e) {
+            if (e.target.classList.contains('remover')) {
+                e.target.closest('tr').remove();
+            }
+        });
+    </script>
+</body>
+</html>
+
