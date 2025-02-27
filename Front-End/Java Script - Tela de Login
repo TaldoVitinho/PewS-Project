@@ -1,0 +1,37 @@
+// login.js
+
+// Model (Modelo)
+const Model = {
+    usuarios: [
+        { usuario: "admin", senha: "admin123" }
+    ],
+
+    validarLogin(usuario, senha) {
+        return this.usuarios.some(u => u.usuario === usuario && u.senha === senha);
+    }
+};
+
+// Controller (Controlador)
+const Controller = {
+    init() {
+        const form = document.getElementById("loginForm");
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            this.logar();
+        });
+    },
+
+    logar() {
+        const login = document.getElementById('login').value;
+        const senha = document.getElementById('senha').value;
+
+        if (Model.validarLogin(login, senha)) {
+            window.location.href = "inicial.html"; // Redireciona para a página inicial
+        } else {
+            alert('Usuário ou senha incorretos');
+        }
+    }
+};
+
+// Inicializa o Controller
+Controller.init();
