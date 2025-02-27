@@ -45,12 +45,12 @@ O **PEWS** é um sistema de alerta precoce para monitoramento de pacientes pedi�
       - Recebe as entradas do usuário da View, processa essas entradas (possivelmente atualizando o Model) e retorna a View apropriada.
       - Contém a lógica para manipular as interações do usuário e atualizar o Model e a View conforme necessário.
 
-   Algumas das vantagens que fazem o MVC ser comummente utilizado em interfaces gráficas nas aplicações, é que a View pode ser alterada sem afetar diretamento o Model,  permitindo a reutilização do código; a separação clara entre os componentes permite testar cada parte de forma isolada facilitando a parte de teste; o MVC também serapara a responsabilidade de cada componente de forma clara, facilitando a manutenção e a escalabilidade.
+   Algumas das vantagens que fazem o MVC ser comumente utilizado em interfaces gráficas nas aplicações, é que a View pode ser alterada sem afetar diretamento o Model,  permitindo a reutilização do código; a separação clara entre os componentes permite testar cada parte de forma isolada facilitando a parte de teste; o MVC também serapara a responsabilidade de cada componente de forma clara, facilitando a manutenção e a escalabilidade.
 
    O MVC foi utilizada na nossa tela de LOGIN.
 
 
-## Como abrir a Página WEB
+## Como Abrir a Página WEB
 
    1° Devemos instalar a pasta Projeto_PEWS.rar;
    
