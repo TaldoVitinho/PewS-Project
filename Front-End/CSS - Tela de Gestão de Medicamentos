@@ -1,0 +1,168 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    padding: 20px;
+}
+
+/* Barra de navegação no topo */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Container principal */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin-top: 100px; /* Espaço para a navbar */
+}
+
+h1 {
+    font-size: 36px;
+    color: #007BFF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+
+/* Formulário para adicionar medicamentos */
+.adicionar-medicamento {
+    margin-bottom: 40px;
+}
+
+.adicionar-medicamento label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.adicionar-medicamento input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.adicionar-medicamento input:focus {
+    border-color: #007BFF;
+}
+
+.button-access {
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+.button-access:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Lista de medicamentos */
+.lista-medicamentos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.lista-medicamentos th, .lista-medicamentos td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.lista-medicamentos th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.lista-medicamentos tr:hover {
+    background-color: #f9f9f9;
+}
+
+.lista-medicamentos button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lista-medicamentos button.editar {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.lista-medicamentos button.editar:hover {
+    background-color: #218838;
+}
+
+.lista-medicamentos button.remover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.lista-medicamentos button.remover:hover {
+    background-color: #c82333;
+}
