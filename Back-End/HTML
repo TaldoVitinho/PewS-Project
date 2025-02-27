@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento e Simulação de Uso do PEWS</title>
+    <link rel="stylesheet" href="treinamento-pews.css">
+</head>
+<body>
+    <!-- Barra de navegação no topo -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="inicial.html">Início</a></li>
+            <li><a href="suporte.html">Suporte</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h1>Treinamento e Simulação de Uso do PEWS</h1>
+
+        <!-- Seção de Treinamento -->
+        <section class="treinamento">
+            <h2>Instruções de Treinamento</h2>
+            <p>
+                O PEWS (Pediatric Early Warning Score) é uma ferramenta clínica desenvolvida para identificar precocemente sinais de deterioração em pacientes pediátricos. Siga as etapas abaixo para entender como utilizar o sistema:
+            </p>
+            <ol>
+                <li>Analise os parâmetros clínicos do paciente (respiração, cardiovascular e comportamento).</li>
+                <li>Atribua uma pontuação de 0 a 3 para cada parâmetro, conforme a gravidade.</li>
+                <li>Some as pontuações para obter o escore total do PEWS.</li>
+                <li>Consulte a tabela de referência para determinar o nível de risco.</li>
+                <li>Notifique a equipe médica caso o escore indique risco moderado ou alto.</li>
+            </ol>
+        </section>
+
+        <!-- Simulação Interativa -->
+        <section class="simulacao">
+            <h2>Simulação de Uso do PEWS</h2>
+            <div class="simulacao-container">
+                <div class="parametro">
+                    <label for="respiratorio">Respiração:</label>
+                    <select id="respiratorio">
+                        <option value="0">0 - Normal</option>
+                        <option value="1">1 - Leve aumento da frequência respiratória</option>
+                        <option value="2">2 - Dificuldade respiratória moderada</option>
+                        <option value="3">3 - Grave insuficiência respiratória</option>
+                    </select>
+                </div>
+                <div class="parametro">
+                    <label for="cardiovascular">Cardiovascular:</label>
+                    <select id="cardiovascular">
+                        <option value="0">0 - Normal</option>
+                        <option value="1">1 - Frequência cardíaca levemente elevada</option>
+                        <option value="2">2 - Pressão arterial baixa</option>
+                        <option value="3">3 - Choque ou parada cardíaca</option>
+                    </select>
+                </div>
+                <div class="parametro">
+                    <label for="comportamento">Comportamento:</label>
+                    <select id="comportamento">
+                        <option value="0">0 - Normal</option>
+                        <option value="1">1 - Letargia leve</option>
+                        <option value="2">2 - Letargia moderada</option>
+                        <option value="3">3 - Inconsciente</option>
+                    </select>
+                </div>
+                <button class="button-access" onclick="calcularPEWS()">Calcular PEWS</button>
+                <div id="resultado" class="resultado"></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Script para a simulação -->
+    <script>
+        function calcularPEWS() {
+            const respiratorio = parseInt(document.getElementById('respiratorio').value);
+            const cardiovascular = parseInt(document.getElementById('cardiovascular').value);
+            const comportamento = parseInt(document.getElementById('comportamento').value);
+
+            const total = respiratorio + cardiovascular + comportamento;
+
+            let mensagem = '';
+            if (total <= 2) {
+                mensagem = 'Escore PEWS: ' + total + ' - Baixo Risco';
+            } else if (total <= 5) {
+                mensagem = 'Escore PEWS: ' + total + ' - Risco Mediano';
+            } else if (total <= 8) {
+                mensagem = 'Escore PEWS: ' + total + ' - Alto Risco';
+            } else {
+                mensagem = 'Escore PEWS: ' + total + ' - Risco Extremo';
+            }
+
+            document.getElementById('resultado').innerText = mensagem;
+        }
+    </script>
+</body>
+</html>
 
