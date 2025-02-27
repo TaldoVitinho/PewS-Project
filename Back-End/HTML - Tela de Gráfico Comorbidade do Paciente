@@ -1,0 +1,256 @@
+                Principal:
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Comorbidades PEWS</title>
+    <link rel="stylesheet" href="graficos-comorbidades.css">
+</head>
+<body>
+    <!-- Barra de navegação no topo -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="inicial.html">Início</a></li>
+            <li><a href="suporte.html">Suporte</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h1>Nível de Comorbidade do Paciente</h1>
+        
+        <!-- Gráfico de comorbidades -->
+        <div class="grafico-comorbidades">
+            <div class="nivel">
+                <div class="dot level-1"></div>
+                <a href="risco-baixo.html">Nível 1 - Baixo Risco</a>
+            </div>
+            <div class="nivel">
+                <div class="dot level-2"></div>
+                <a href="risco-mediano.html">Nível 2 - Risco Mediano</a>
+            </div>
+            <div class="nivel">
+                <div class="dot level-3"></div>
+                <a href="risco-alto.html">Nível 3 - Alto Risco</a>
+            </div>
+            <div class="nivel">
+                <div class="dot level-4"></div>
+                <a href="risco-extremo.html">Nível 4 - Risco Extremo</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+                Risco Alto:
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alto Risco - Comorbidades</title>
+    <link rel="stylesheet" href="risco-alto.css">
+</head>
+<body>
+    <!-- Barra de navegação no topo -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="graficos-comorbidades.html">Voltar</a></li>
+            <li><a href="inicial.html">Início</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h1>Alto Risco - Comorbidades</h1>
+        
+        <!-- Lista de comorbidades -->
+        <div class="lista-comorbidades">
+            <ol>
+                <li>Hipertensão arterial severa</li>
+                <li>Diabetes tipo 1 ou tipo 2 com complicações (neuropatia, nefropatia)</li>
+                <li>Obesidade mórbida (IMC > 40)</li>
+                <li>Doença pulmonar obstrutiva crônica (DPOC)</li>
+                <li>Asma grave persistente</li>
+                <li>Doença renal crônica estágio 4</li>
+                <li>Epilepsia de difícil controle</li>
+                <li>Insuficiência cardíaca congestiva</li>
+                <li>Doença arterial coronariana</li>
+                <li>Arritmias cardíacas graves</li>
+                <li>Doença de Kawasaki com sequelas cardíacas</li>
+                <li>Insuficiência hepática compensada</li>
+                <li>Cirrose hepática compensada</li>
+                <li>Doença de Crohn grave</li>
+                <li>Esclerose múltipla</li>
+                <li>Esquizofrenia</li>
+                <li>Transtorno do espectro autista severo</li>
+                <li>Doença celíaca não controlada</li>
+                <li>Doença de Addison</li>
+                <li>Lúpus eritematoso sistêmico ativo</li>
+                <li>Artrite reumatoide grave</li>
+                <li>Doenças hematológicas como talassemia major</li>
+                <li>Hipercoagulabilidade sanguínea (trombofilias hereditárias)</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
+
+
+                    Risco Baixo:
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baixo Risco - Comorbidades</title>
+    <link rel="stylesheet" href="risco-baixo.css">
+</head>
+<body>
+    <!-- Barra de navegação no topo -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="graficos-comorbidades.html">Voltar</a></li>
+            <li><a href="inicial.html">Início</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h1>Baixo Risco - Comorbidades</h1>
+        
+        <!-- Lista de comorbidades -->
+        <div class="lista-comorbidades">
+            <ol>
+                <li>Hipotireoidismo controlado</li>
+                <li>Hipertensão arterial leve</li>
+                <li>Sobrepeso (IMC entre 25 e 30)</li>
+                <li>Asma leve e intermitente</li>
+                <li>Ansiedade leve ou moderada</li>
+                <li>Doença do refluxo gastroesofágico (DRGE)</li>
+                <li>Dermatite atópica</li>
+                <li>Sinusite crônica</li>
+                <li>Gastrite crônica não complicada</li>
+                <li>Enxaqueca sem aura</li>
+                <li>Osteopenia</li>
+                <li>Hiperlipidemia leve (colesterol levemente elevado)</li>
+                <li>Deficiência leve de vitamina D</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
+
+
+                  Risco Extremo:
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risco Muito Alto - Comorbidades</title>
+    <link rel="stylesheet" href="risco-extremo.css">
+</head>
+<body>
+    <!-- Barra de navegação no topo -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="graficos-comorbidades.html">Voltar</a></li>
+            <li><a href="inicial.html">Início</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h1>Risco Muito Alto - Comorbidades</h1>
+        
+        <!-- Lista de comorbidades -->
+        <div class="lista-comorbidades">
+            <ol>
+                <li>Doença renal crônica estágio 5 (necessidade de diálise)</li>
+                <li>Insuficiência hepática grave</li>
+                <li>Insuficiência cardíaca terminal</li>
+                <li>DPOC avançado com necessidade de oxigênio contínuo</li>
+                <li>Fibrose cística avançada</li>
+                <li>Sepsis recorrente</li>
+                <li>Paralisia cerebral severa com comprometimento respiratório</li>
+                <li>Doenças neurodegenerativas terminais (ELA, Alzheimer avançado, Huntington)</li>
+                <li>Neoplasias metastáticas em estágio terminal</li>
+                <li>Síndrome de imunodeficiência grave (AIDS avançada)</li>
+                <li>Doença de Niemann-Pick</li>
+                <li>Doença de Tay-Sachs</li>
+                <li>Epidermólise bolhosa distrófica</li>
+                <li>Anemia falciforme com complicações graves</li>
+                <li>Síndrome de Marfan com dissecção aórtica</li>
+                <li>Hipertensão pulmonar grave</li>
+                <li>AVC isquêmico ou hemorrágico recente com sequelas graves</li>
+                <li>Doenças autoimunes severas com falência de órgãos múltiplos</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+                  Risco Mediano:
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risco Moderado - Comorbidades</title>
+    <link rel="stylesheet" href="risco-mediano.css">
+</head>
+<body>
+    <!-- Barra de navegação no topo -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="graficos-comorbidades.html">Voltar</a></li>
+            <li><a href="inicial.html">Início</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h1>Risco Moderado - Comorbidades</h1>
+        
+        <!-- Lista de comorbidades -->
+        <div class="lista-comorbidades">
+            <ol>
+                <li>Hipertensão arterial moderada</li>
+                <li>Diabetes tipo 2 sem complicações</li>
+                <li>Obesidade moderada (IMC entre 30 e 40)</li>
+                <li>Apneia do sono moderada</li>
+                <li>Doença pulmonar leve a moderada</li>
+                <li>Insuficiência renal crônica leve a moderada</li>
+                <li>Transtorno bipolar moderado</li>
+                <li>Depressão grave</li>
+                <li>Hipotireoidismo não tratado</li>
+                <li>Doença inflamatória intestinal (retocolite ulcerativa, Crohn leve)</li>
+                <li>Psoríase moderada</li>
+                <li>Doença do fígado gorduroso não alcoólica</li>
+                <li>Osteoporose moderada</li>
+                <li>Hipertrofia prostática benigna</li>
+                <li>Espondilite anquilosante</li>
+                <li>Síndrome de Ehlers-Danlos leve</li>
+                <li>Miastenia gravis leve</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
